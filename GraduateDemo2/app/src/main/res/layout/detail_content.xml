@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/imgview1"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:scaleType="fitXY"/>
+    <TextView
+        android:layout_below="@id/imgview1"
+        android:id="@+id/textview2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textStyle="italic"/>
+    <Button
+        android:layout_below="@id/textview2"
+        android:id="@+id/share"
+        android:text="分享到qq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="share"/>
+
+</RelativeLayout>
