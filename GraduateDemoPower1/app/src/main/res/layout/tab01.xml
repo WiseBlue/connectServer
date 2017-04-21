@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/tab01"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+    <com.example.administrator.graduatedemo.PullToRefreshLayout
+        android:layout_gravity="center"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/refresh_view"
+
+        android:layout_below="@id/top01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <include layout="@layout/refresh_head" />
+        <!-- 支持所有实现Pullable接口的View -->
+
+
+
+        <com.example.administrator.graduatedemo.PullableListview
+            android:id="@+id/content_view"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:divider="@color/gray"
+            android:dividerHeight="1dp"
+            />
+
+        <include layout="@layout/load_more" />
+
+    </com.example.administrator.graduatedemo.PullToRefreshLayout>
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is first Tab"
+        android:textSize="22sp"
+        android:textStyle="bold" />-->
+
+</LinearLayout>

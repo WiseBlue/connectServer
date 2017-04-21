@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/imgview5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"/>
+    <TextView
+        android:layout_below="@id/imgview5"
+        android:id="@+id/textview5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textStyle="italic"/>
+    <Button
+        android:layout_below="@id/textview5"
+        android:id="@+id/share"
+        android:text="分享到qq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="share"/>
+    <Button
+        android:layout_below="@id/share"
+        android:id="@+id/collect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="添加到收藏夹"
+        android:onClick="collect"/>
+
+</RelativeLayout>
