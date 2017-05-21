@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:background="#af0909">
+        <TextView
+            android:id="@+id/journal_textview"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorAWhite"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支部日志"/>
+    </android.support.v7.widget.Toolbar>
+    <com.flyco.tablayout.SlidingTabLayout
+        android:layout_below="@id/toolbar"
+        android:id="@+id/tablayout3"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/colorAWhite"
+        app:tl_divider_color="@color/colorARed"
+        app:tl_divider_padding="13dp"
+        app:tl_divider_width="1dp"
+        app:tl_indicator_color="@color/colorARed"
+        app:tl_indicator_height="1.5dp"
+        app:tl_indicator_width_equal_title="true"
+        app:tl_tab_padding="22dp"
+        app:tl_tab_space_equal="false"
+        app:tl_indicator_bounce_enable="true"
+        app:tl_indicator_anim_enable="true"
+
+        app:tl_textSelectColor="@color/colorARed"
+        app:tl_textUnselectColor="#66000000"
+        app:tl_underline_color="@color/colorGray"
+        app:tl_underline_height="1dp">
+
+    </com.flyco.tablayout.SlidingTabLayout>
+    <com.example.nenguou.youngleague.ChildViewPager
+        android:layout_below="@id/tablayout3"
+        android:id="@+id/view_pager3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </com.example.nenguou.youngleague.ChildViewPager>
+
+    <ImageView
+        android:onClick="write"
+        android:id="@+id/journal_write"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/write"
+        android:background="#af0909"
+        android:foregroundGravity="center"
+        android:layout_marginEnd="19dp"
+        android:layout_above="@+id/tablayout3"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

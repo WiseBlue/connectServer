@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+
+    <!--标题-->
+    <!--登录与密码-->
+
+    <!--登录遇到问题-->
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/main"
+        android:layout_below="@+id/top"
+        android:layout_alignParentStart="true">
+        <!--用户名-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingLeft="16dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="帐 户："
+                android:gravity="center_vertical"
+                android:id="@+id/tvUserName"
+                android:paddingLeft="16dp"
+                android:textSize="14sp"
+                android:textColor="#000000"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/tvUserName"
+                android:hint="请输入用户名或手机号"
+                android:singleLine="true"
+                android:background="#00000000"
+                android:textColor="#FFD0D0D0"
+                android:id="@+id/EditText3"
+                android:textColorHint="#9e9e9e"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:paddingLeft="16dp"
+
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="密 码："
+                android:gravity="center_vertical"
+                android:id="@+id/tvPassword"
+                android:paddingLeft="16dp"
+                android:textSize="14sp"
+                android:textColor="#000000"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_toRightOf="@id/tvPassword"
+                android:hint="请输入密码"
+                android:singleLine="true"
+                android:background="#00000000"
+                android:textColor="#FFD0D0D0"
+                android:id="@+id/EditText4"
+                android:textColorHint="#9e9e9e"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/main"
+        android:id="@+id/question"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="登录遇到问题？"
+            android:textColor="@color/colorPrimary"
+            android:layout_alignParentRight="true"
+            android:paddingRight="16dp"
+
+            /></RelativeLayout>
+
+
+    <Button
+        android:layout_below="@id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:text="登 录"
+        android:textSize="20sp"
+        android:onClick="entry"
+        android:background="#af0909"/>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="#af0909"
+        android:id="@+id/top"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:text="登录"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:text="注册"
+            android:textSize="14sp"
+            android:textColor="#FFFFFF"
+            android:gravity="center_vertical"
+            android:layout_marginRight="16dp"
+            android:onClick="register"
+            />
+    </RelativeLayout>
+
+
+</RelativeLayout>
